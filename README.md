@@ -1,4 +1,4 @@
-# APK - Gruppe 6 - GameOfLife
+# APK - GameOfLife
 
 To build and run:
 
