@@ -24,7 +24,7 @@ public:
     using Component = ComponentType<Engine>;
 
     template <typename... Flags>
-    Engine(std::string name, const int height, const int width, Flags... flags)
+    Engine(std::string name, const int height, const int width, Flags&&... flags)
     :   manager_(std::make_unique<SDLWrapper::Manager>(std::forward<Flags>(flags)...)),
         window_(std::make_shared<SDLWrapper::Window>(std::move(name), height, width)),
         renderer_(std::make_shared<SDLWrapper::Renderer>(window_)),
