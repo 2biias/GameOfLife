@@ -6,8 +6,8 @@ Install SDL:
 - sudo apt-get install -y libsdl2-dev libsdl2-ttf-dev
 
 Run Cmake:
-- cd build
-- cmake ..
+- Go to root folder
+- cmake .
 
 Build (from build folder):
 - make
